@@ -1,4 +1,14 @@
 package ru.stomprf.qrdiscount.dto;
 
-public record OtpRequest(String status, String message) {
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class OtpResponse {
+
+    private String message;
 }
